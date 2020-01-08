@@ -3,7 +3,7 @@ import sqlite3
 
 
 #connect to db
-conn = sqlite3.connect('data.db')
+conn = sqlite3.connect('db.sqlite')
 
 #create a function to query data
 def q_all(query):

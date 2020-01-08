@@ -7,4 +7,4 @@ df = pd.DataFrame(data=d)
 
 engine = create_engine('sqlite:///db.sqlite', echo=False)
 df.to_sql('Strain', con=engine)
-print(engine.execute("SELECT * FROM Strain").fetchall())
+engine.execute("SELECT * FROM Strain").fetchall()
